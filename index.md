@@ -1,4 +1,4 @@
-1. ![image](https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/da4b07ab-0f1b-4ffd-ac32-4818ad1b84e6)
+![image](https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/da4b07ab-0f1b-4ffd-ac32-4818ad1b84e6)
    
 These are the three commands for `cd` `ls` and `cat` without any arguments. Shown in line 1, 2, and 3.
 
@@ -8,7 +8,7 @@ Then, `ls` outputted the folder lecture1 because the command is intended to prin
 
 Finally, the `cat` command printed nothing because there are no files to be read since no arguments were passed through. The current working directory is the root directory, and this output is not an error.
 
-2. ![image](https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/937703ad-93d3-4b18-844a-a4615574a2ea)
+![image](https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/937703ad-93d3-4b18-844a-a4615574a2ea)
    
 These are the three commands for `cd` `ls` and `cat` with the argument as a directory. Shown in line 1, 2, and 3.
 
@@ -18,7 +18,7 @@ Then, `ls` outputted the contents of the folder lecture1 because this command is
 
 Finally, the `cat` command gave an error stating that the 'messages' argument is a directory. This occured because the `cat` command expects the argument to be a file, not a directory, so that it can properly print out the contents of the file. Therefore, a directory argument gave an error. The current working directory is still /lecture1.
 
-3. ![image](https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/81fd36b7-c809-4a14-9ccb-eb855725b06a)
+![image](https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/81fd36b7-c809-4a14-9ccb-eb855725b06a)
    
 These are the three commands for `cd` `ls` and `cat` with the argument as a file. Shown in line 1, 2, and 3.
 
