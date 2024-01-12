@@ -1,6 +1,8 @@
+# Lab Report 1
+
 ![image](https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/da4b07ab-0f1b-4ffd-ac32-4818ad1b84e6)
    
-These are the three commands for `cd` `ls` and `cat` without any arguments. Shown in line 1, 2, and 3.
+These are the three commands for `cd` `ls` and `cat` without any arguments.
 
 The working directory was originally /lecture1, but it changes to the root directory when `cd` is used because the command changes the directory to the root since no argument was provided. This output is not an error.
 
@@ -10,7 +12,7 @@ Finally, the `cat` command printed nothing because there are no files to be read
 
 ![image](https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/937703ad-93d3-4b18-844a-a4615574a2ea)
    
-These are the three commands for `cd` `ls` and `cat` with the argument as a directory. Shown in line 1, 2, and 3.
+These are the three commands for `cd` `ls` and `cat` with the argument as a directory.
 
 The working directory was originally the root directory, but it changes to /lecture1 when the command is run because `cd` changed the directory to the child folder lecture1 as specified by the argument. This output is not an error.
 
@@ -20,7 +22,7 @@ Finally, the `cat` command gave an error stating that the 'messages' argument is
 
 ![image](https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/81fd36b7-c809-4a14-9ccb-eb855725b06a)
    
-These are the three commands for `cd` `ls` and `cat` with the argument as a file. Shown in line 1, 2, and 3.
+These are the three commands for `cd` `ls` and `cat` with the argument as a file.
 
 The working directory was originally /lecture1, and an error occurs because the `cd` command expects the argument to be a directory, not a file. However, because the file Hello.java is passed through the argument instead of a directory, the error states that Hello.java is not a directory.
 
