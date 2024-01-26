@@ -1,6 +1,7 @@
 # Lab Report 2
 
 ## Part 1
+
 <img width="1037" alt="image" src="https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/1e403d6b-0f23-420d-948b-682e07e49499">
 
 <img width="881" alt="image" src="https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/b93fca3d-650f-47d8-ad79-b8a1561b0cb8">
@@ -18,10 +19,13 @@ From both requests, the values for `URI url`, `String[] parameters`, `String mes
 ## Part 2
 
 Absolute paths to the private and public keys, respectively:
+
 <img width="372" alt="image" src="https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/2af0e5d7-8b5c-4fd3-99dc-26925b8a5ded">
 
 Login without being prompted for password: 
+
 <img width="566" alt="image" src="https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/41b1a35d-86b1-49b3-81ab-fa251db04e98">
 
 ## Part 3
+
 Last week, I learned how to start a server on both my computer and remote hosts. I now have a basic understanding of how servers work and what commands are used to run them.
