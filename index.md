@@ -40,7 +40,7 @@ Additionally, the `paramters` array changes from an empty string array to the va
 The `message` string also changes from an empty string to `"How are you"` because it splits the first value within `parameters` across the `=` sign and takes the latter half. 
 
 Lastly, the `user` string changes from an empty string to `"yash"` because it splits the second value within `parameters` across the `=` sign and takes the latter half.
-
+<div style="page-break-after: always;"></div>
 ## Part 2
 
 Absolute path to the private key: `/Users/jeremysu/.ssh/id_rsa`
