@@ -8,7 +8,20 @@ Hi! I'm having trouble with this method I wrote that is supposed to find the max
 
 Here's my code along with the tester and the terminal output:
 
-<img width="448" alt="image" src="https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/0f73dce3-5668-47a0-85b3-40d3f869ea9f">
+```
+public class ListExample {
+    public int findMaxVal(int[] array, int[] array2){
+        int max = array[0];
+        for (int i = 0; i < array.length; i++){
+            if (max < array[i])
+                max = array[i];
+            if (max < array2[i])
+                max = array2[i];
+        }
+        return max;
+    }
+}
+```
 
 <img width="1164" alt="image" src="https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/b6077ca6-ae8c-4962-a10f-18007a7aa14a">
 
@@ -24,7 +37,23 @@ Thanks! My code works as expected now! I realized that the bug was that my initi
 
 Updated Code:
 
-<img width="487" alt="image" src="https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/f25f9d87-7a5f-4b77-b8e1-2de18b689cee">
+```
+public class ListExample {
+    public int findMaxVal(int[] array, int[] array2){
+        int max = array[0];
+        for (int i = 0; i < array.length; i++){
+            if (max < array[i])
+                max = array[i];
+        }
+        //Second for loop to iterate through the second array
+        for (int i = 0; i < array2.length; i++){
+            if (max < array2[i])
+                max = array2[i];
+        }
+        return max;
+    }
+}
+```
 
 Terminal Output:
 
@@ -32,21 +61,58 @@ Terminal Output:
 
 ## File and Directory Structure:
 
-<img width="163" alt="image" src="https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/f0d2353f-d488-462a-a58b-82064f443054">
+<img width="171" alt="image" src="https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/97d8f92b-4ad4-4690-be45-d39cc5df51b3">
 
 Contents of each file before the fix:
 
 `ListExample.java`:
 
-<img width="448" alt="image" src="https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/0f73dce3-5668-47a0-85b3-40d3f869ea9f">
+```
+public class ListExample {
+    public int findMaxVal(int[] array, int[] array2){
+        int max = array[0];
+        for (int i = 0; i < array.length; i++){
+            if (max < array[i])
+                max = array[i];
+            if (max < array2[i])
+                max = array2[i];
+        }
+        return max;
+    }
+}
+```
 
 `Tester.java`:
 
-<img width="1164" alt="image" src="https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/b6077ca6-ae8c-4962-a10f-18007a7aa14a">
+```
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class Tester {
+    @Test
+    public void testMaxMethod(){
+        ListExample listObj = new ListExample();
+        int[] array = {1,2,3,4,5};
+        int[] array2 = {-4,6,1};
+        int[] array3 = {-5,-4,-3,-2};
+        int[] array4 = {9};
+        assertEquals(6, listObj.findMaxVal(array, array2));
+        assertEquals(5, listObj.findMaxVal(array, array3));
+        assertEquals(9, listObj.findMaxVal(array3, array4));
+    }
+}
+```
 
 `test.sh`:
 
-<img width="751" alt="image" src="https://github.com/jeremysu99/cse15l-lab-reports/assets/116580698/47aa6bc2-4916-47c7-9d7a-b1cd5dfdce44">
+```
+set -e
+
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore Tester
+```
 
 ## Commands Used to Trigger the Bug:
 `bash test.sh`
